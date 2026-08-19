@@ -36,19 +36,22 @@
       margin-bottom: 20px;
     }
     .download-btn {
-      display: block;
-      width: 100%;
-      padding: 14px;
-      background-color: #24292e;
-      color: white;
-      text-decoration: none;
-      font-size: 16px;
-      border-radius: 6px;
-      margin: 10px 0;
-      font-weight: bold;
-      transition: background 0.3s;
-      word-wrap: break-word;
-    }
+  display: block;
+  width: 100%;
+  min-height: 52px;
+  padding: 15px 10px;
+  background-color: #24292e;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  margin: 12px 0;
+  font-weight: bold;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
     .download-btn:hover {
       background-color: #000;
     }
@@ -61,11 +64,13 @@
 
     /* Khusus layar kecil */
     @media (max-width: 480px) {
-      body { padding: 10px; }
-      .container { padding: 16px; }
-      h1 { font-size: 18px; }
-      .download-btn { font-size: 15px; padding: 12px; }
-    }
+  .download-btn {
+    width: 100%;
+    min-height: 58px;
+    padding: 17px 8px;
+    font-size: 15px;
+    border-radius: 8px;
+  }
   </style>
 </head>
 <body>
